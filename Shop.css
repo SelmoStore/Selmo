@@ -1,0 +1,533 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+html body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  border: none;
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  color: rgb(67, 67, 67);
+  border-radius: 1000px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+.Navin {
+  width: 95%;
+  z-index: 3;
+  display: flex;
+  vertical-align: super;
+  justify-content: space-between;
+}
+
+.MainImageBg {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -999;
+  object-fit: cover;
+  height: 100vh;
+  object-position: top;
+
+}
+
+.SearchBtn {
+  height: 40px;
+  margin: 30px;
+  transition: filter 0.2s ease; /* Smooth transition for the filter */
+}
+
+.SearchBtn:hover {
+  filter: invert(100%);
+}
+
+.icon {
+  height: 40px;
+}
+
+.MainDivBg {
+  width: 100%;
+  height: 130%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.MainDivUnderlayer {
+  position: absolute;
+  top: 22vh;
+  right: 0%;
+  z-index: 1;
+  height: 65vh;
+}
+
+.central {
+  margin-top: 35vh;
+  margin-left: 2.5vw;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  width: 96%;
+  left: 4%;
+  z-index: 2;
+  display: flex;
+  vertical-align: super;
+}
+
+.navlinksdiv {
+  width: 100%;
+  position: absolute;
+  justify-self: right;
+  width: 30%;
+  right: 0%;
+}
+
+.NavLinks {
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  margin-inline: 5px;
+  text-decoration: none;
+}
+
+.icon {
+  height: 40px; /* Adjust height as needed */
+}
+
+
+.BigT {
+  font-family: "Monda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 60px;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  width: 100vw;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+
+.Content {
+  width: 100vw;
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ItemBox {
+  height: 350px;
+  width: 262.5px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  border-radius: 1px;
+  margin: 10px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.ItemBox:hover {
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.Item {
+  position: relative;
+  top: 10%;
+}
+
+.ItemImg {
+  position: relative;
+  width: 80%;
+  margin-inline: 10%;
+  margin-top: 1.5%;
+  z-index: 1;
+}
+
+.ItemImage {
+  position: absolute;
+  top: 10%;
+  margin-top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30%; /* Adjust as needed */
+  z-index: 2; /* Ensure it appears above other content */
+  border: 0px solid black; /* Optional, remove if not needed */
+}
+.ItemImage {
+  position: absolute;
+  top: 0;
+  margin-top: 20%;
+}
+
+.ItemText {
+  font-family: "Monda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.BDDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.BDDOVBG {
+  z-index: 6;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.BDDIDiv {
+  z-index: 7;
+  display: flex;
+  position: fixed;
+  height: 600px;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.BDLeft {
+  height: 80vh;
+  margin-top: 10vh;
+  width: 40vw;
+  margin-left: 5vh;
+}
+
+.BDRight {
+  font-family: "Monda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 55vw;
+  height: 100vh;
+}
+
+.BDColourBtn {
+  border: none;
+  border-radius: 1000px;
+  height: 30px;
+  width: 30px;
+  margin-top: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ShirtCato {
+  font-family: "Monda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Ensure the container covers the full viewport height */
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start of the container */
+  align-items: center;
+  gap: 20px; /* Space between items */
+  padding: 10px;
+  padding-bottom: 20px; /* Increase bottom padding */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+
+.ShirtCato h4 {
+  margin: 0;
+  padding: 10px; /* Adjust padding to ensure better spacing */
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  transition: filter 0.2s ease;
+}
+
+.ShirtCato h4:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.BLabel {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.BSelect {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.CodeDisplayer {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px black solid;
+  font-size: 15px;
+  padding: 5px;
+  padding-inline: 15px;
+  margin-top: 20px;
+}
+
+.CodeDisplayerCopyBtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px black solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 15px;
+  padding: 5px;
+  padding-inline: 15px;
+  margin-top: 15px;
+  border-left: none;
+  margin-top: 20px;
+}
+
+.MSGRBTN {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  border: none;
+}
+
+.MSGR {
+  height: 35px;
+  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+.SizesDiv {
+  padding: 50px;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.SOVBG {
+  z-index: 6;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.SizesImage {
+  width: 400px;
+}
+
+
+.MenuIcon {
+  display: none;
+}
+
+.SDDClose {
+  transform: translate(-50%);
+  margin-left: 50%;
+  margin-top: -60px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 940px) {
+
+  .icon {
+    height: 30px;
+  }
+
+  .MenuIcon {
+    display: block;
+  }
+
+  .NavLinks {
+    display: none;
+  }
+
+  .BDLeft {
+    width: 100vw;
+}
+
+.BDDIDiv {
+  display: block;
+  overflow-y: scroll;
+}
+
+.BLabel {
+  font-size: 20px;
+  margin-top: 15px;
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.CDD {
+  display: flex;
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+  .SizesDiv {
+    padding: 50px;
+    padding-inline: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .BDLeft {
+    margin-left: 0vh;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  .BDRight {
+    margin-top: 0px;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .SizesImage {
+    width: 90vw;
+  }
+
+
+  .MainDivUnderlayer {
+    display: none;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* 
+@media only screen and (max-width: 811px) {
+
+  .MainDivName {
+    width: 100%;
+    text-align: center;
+  }
+
+  .MainDivNameS {
+    width: 100%;
+    text-align: center;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+} */
+
+
+@media only screen and (max-width: 556px) {
+
+  .MainDivName {
+    font-size: 7.5vw;
+    width: 100%;
+    line-height: 1.25;
+  }
+
+  .MainDivNameS {
+    top: 47.5vh;
+    font-size: 4.5vw;
+    width: 100%;
+    line-height: 1.25;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+}
