@@ -2,11 +2,13 @@ window.onload = function () {
   const Summer = 20;
   const Animals = 55;
   const Anime = 37;
+  const Palastine = 9;
   const Arabic = 21;
   const Art = 26;
   const Cars = 20;
   const Dc = 20;
   const Food = 37;
+  const Chess = 30;
   const Football = 41;
   const Gamming = 30;
   const Gym = 32;
@@ -17,17 +19,17 @@ window.onload = function () {
   const Nature = 37;
   const Pixel = 28;
   const Science = 21;
-  const Sport = 26;
+  const Sport = 39;
   const Marvel = 50;
   const Cartoon = 110;
 
   const Categories = [
-    Summer, Pixel, Animals, Anime, Arabic, Art, Cars, Dc, Food, Football,
+    Summer, Pixel, Animals, Anime, Palastine, Arabic, Art, Cars, Dc, Food, Chess, Football,
     Gamming, Gym, Jobs, Mafia, Motivation, Movie, Nature, Science, Sport, Marvel, Cartoon
   ];
   const CategoriesNames = [
-    "Summer", "Pixel", "Animals", "Anime", "Arabic", "Art", "Cars", "Dc",
-    "Food", "Football", "Gamming", "Gym", "Jobs", "Mafia", "Motivation",
+    "Summer", "Pixel", "Animals", "Anime", "Palastine", "Arabic", "Art", "Cars", "Dc",
+    "Food", "Chess", "Football", "Gamming", "Gym", "Jobs", "Mafia", "Motivation",
     "Movie", "Nature", "Science", "Sport", "Marvel", "Cartoon"
   ];
 
