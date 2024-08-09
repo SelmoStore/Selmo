@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   // Retrieve DOM elements
   const elements = {
@@ -119,8 +122,8 @@ document.getElementById('CodeDisplayerCopyBtn').addEventListener('click', () => 
 
   setTimeout(() => {
     CodeDisplayerCopyBtn.style.backgroundColor = "white";
-  CodeDisplayerCopyBtn.style.color = "black";
-  CodeDisplayerCopyBtn.innerHTML = "Copy";
+    CodeDisplayerCopyBtn.style.color = "black";
+    CodeDisplayerCopyBtn.innerHTML = "Copy";
   }, 1000);
 
   textarea.value = content;
@@ -194,3 +197,10 @@ updateShirtCode();
 
 // Update display every second
 setInterval(updateShirtCode, 1000);
+
+
+
+const LOADING = document.getElementById("LOADING");
+setTimeout(() => {
+  LOADING.style.display = "none";
+}, 60000);
