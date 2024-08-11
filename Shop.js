@@ -196,7 +196,7 @@ function updateShirtCode() {
 updateShirtCode();
 
 // Update display every second
-setInterval(updateShirtCode, 1000);
+setInterval(updateShirtCode, 250);
 
 
 
